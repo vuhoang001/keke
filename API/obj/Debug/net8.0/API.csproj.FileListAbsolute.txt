@@ -51,3 +51,10 @@ D:\c#\keke\API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\c#\keke\API\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 D:\c#\keke\API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 D:\c#\keke\API\obj\Debug\net8.0\API.sourcelink.json
+D:\c#\keke\API\bin\Debug\net8.0\ErrorOr.dll
+D:\c#\keke\API\bin\Debug\net8.0\MediatR.dll
+D:\c#\keke\API\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\c#\keke\API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\c#\keke\API\bin\Debug\net8.0\Mapster.dll
+D:\c#\keke\API\bin\Debug\net8.0\Mapster.Core.dll
+D:\c#\keke\API\bin\Debug\net8.0\Mapster.DependencyInjection.dll

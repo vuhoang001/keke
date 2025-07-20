@@ -1,19 +1,18 @@
 using Application;
 using Infrastructure;
+using keke;
 
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services
+        .AddPresentation()
         .AddApplication()
         .AddInfrastructure(builder.Configuration);
-    builder.Services.AddControllers();
 }
 
-#region Swagger
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 var app = builder.Build();
+
+#region Swagger
 
 if (app.Environment.IsDevelopment())
 {
@@ -23,6 +22,7 @@ if (app.Environment.IsDevelopment())
 
 #endregion
 
+app.UseExceptionHandler("/error");
 app.UseHttpsRedirection();
 app.MapControllers();
 

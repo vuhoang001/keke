@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1PcNrepKoMo=",
+  "dgSpecHash": "OPyrdFa1aZQ=",
   "success": true,
   "projectFilePath": "D:\\c#\\keke\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\My computer\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

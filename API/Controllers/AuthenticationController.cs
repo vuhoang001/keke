@@ -1,22 +1,42 @@
 ﻿using Application.Services.Authentication;
+using Application.Services.Authentication.Commands;
+using Application.Services.Authentication.Commands.Register;
+using Application.Services.Authentication.Common;
+using Application.Services.Authentication.Queries;
+using Application.Services.Authentication.Queries.Login;
 using Contracts.Authentication;
+using ErrorOr;
+using MapsterMapper;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace keke.Controllers;
 
-[ApiController]
-[Route("api/auth")]
-public class AuthenticationController(IAuthenticationService authenticationService) : ControllerBase
+[Route("api/[controller]")]
+public class AuthenticationController(
+    ISender mediator,
+    IMapper mapper
+) : ApiController
 {
     [HttpPost("register")]
-    public IActionResult Register(RequestRegister request)
+    public async Task<IActionResult> Register(RequestRegister request)
     {
-        return Ok(authenticationService.Register(request.FirstName, request.LastName, request.Email, request.Password));
+        var registerCommand = mapper.Map<RegisterCommand>(request);
+        var authResult = await mediator.Send(registerCommand);
+
+        return authResult.Match(
+            response => Ok(mapper.Map<AuthenticationResponse>(response)),
+            errors => Problem(errors));
     }
 
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-        return Ok(authenticationService.Login(request.Email, request.Password));
+        var loginQuery = mapper.Map<LoginQuery>(request);
+        var authResult = await mediator.Send(loginQuery);
+
+        return authResult.Match(
+            response => Ok(mapper.Map<AuthenticationResponse>(response)),
+            errors => Problem(errors));
     }
 }

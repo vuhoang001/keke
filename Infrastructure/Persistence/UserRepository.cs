@@ -10,7 +10,7 @@ public class UserRepository : IUserRepository
 
     public User? GetUserByEmail(string email)
     {
-        var singleOrDefault = _users.SingleOrDefault(u => u.Email == email);
+        var singleOrDefault = _users.FirstOrDefault(u => u.Email == email);
         return singleOrDefault;
     }
 

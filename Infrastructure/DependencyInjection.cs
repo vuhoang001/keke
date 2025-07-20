@@ -14,7 +14,7 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection services,
         ConfigurationManager builderConfiguration)
     {
-        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddSingleton<IUserRepository, UserRepository>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
         services.Configure<JwtSettings>(builderConfiguration.GetSection(JwtSettings.SectionName));
