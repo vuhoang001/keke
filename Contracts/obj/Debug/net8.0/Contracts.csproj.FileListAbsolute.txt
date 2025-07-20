@@ -9,3 +9,4 @@ D:\c#\keke\Contracts\obj\Debug\net8.0\Contracts.dll
 D:\c#\keke\Contracts\obj\Debug\net8.0\refint\Contracts.dll
 D:\c#\keke\Contracts\obj\Debug\net8.0\Contracts.pdb
 D:\c#\keke\Contracts\obj\Debug\net8.0\ref\Contracts.dll
+D:\c#\keke\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
