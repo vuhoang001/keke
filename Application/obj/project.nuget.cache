@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kDKejBBX1tg=",
+  "success": true,
+  "projectFilePath": "D:\\c#\\keke\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\My computer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0-preview.6.25358.103\\microsoft.extensions.dependencyinjection.abstractions.10.0.0-preview.6.25358.103.nupkg.sha512"
+  ],
+  "logs": []
+}

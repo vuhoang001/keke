@@ -1,0 +1,15 @@
+D:\c#\keke\Application\bin\Debug\net8.0\Application.deps.json
+D:\c#\keke\Application\bin\Debug\net8.0\Application.dll
+D:\c#\keke\Application\bin\Debug\net8.0\Application.pdb
+D:\c#\keke\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\keke\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\c#\keke\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\c#\keke\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\c#\keke\Application\obj\Debug\net8.0\Application.dll
+D:\c#\keke\Application\obj\Debug\net8.0\refint\Application.dll
+D:\c#\keke\Application\obj\Debug\net8.0\Application.pdb
+D:\c#\keke\Application\obj\Debug\net8.0\ref\Application.dll
+D:\c#\keke\Application\bin\Debug\net8.0\Domain.dll
+D:\c#\keke\Application\bin\Debug\net8.0\Domain.pdb
+D:\c#\keke\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\c#\keke\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
