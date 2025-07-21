@@ -20,9 +20,9 @@ public class RegisterCommandHandler(IJwtTokenGenerator jwtTokenGenerator, IUserR
         var user = new User()
         {
             FirstName = command.FirstName,
-            LastName = command.LastName,
-            Email = command.Email,
-            Password = command.Password,
+            LastName  = command.LastName,
+            Email     = command.Email,
+            Password  = command.Password,
         };
 
         userRepository.AddUser(user);

@@ -1,6 +1,4 @@
-﻿using Application.Services.Authentication.Commands.Register;
-using Application.Services.Authentication.Common;
-using ErrorOr;
+﻿using ErrorOr;
 using FluentValidation;
 using MediatR;
 
