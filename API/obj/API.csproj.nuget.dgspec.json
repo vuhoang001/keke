@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c#\\keke\\API\\API.csproj": {}
+    "D:\\lanh_thoi_dung_mua\\keke\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\c#\\keke\\API\\API.csproj": {
+    "D:\\lanh_thoi_dung_mua\\keke\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\keke\\API\\API.csproj",
+        "projectUniqueName": "D:\\lanh_thoi_dung_mua\\keke\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\c#\\keke\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\My computer\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\keke\\API\\obj\\",
+        "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\foxai\\.nuget\\packages\\",
+        "outputPath": "D:\\lanh_thoi_dung_mua\\keke\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\My computer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\foxai\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,14 +26,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\c#\\keke\\Application\\Application.csproj": {
-                "projectPath": "D:\\c#\\keke\\Application\\Application.csproj"
+              "D:\\lanh_thoi_dung_mua\\keke\\Application\\Application.csproj": {
+                "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\Application\\Application.csproj"
               },
-              "D:\\c#\\keke\\Contracts\\Contracts.csproj": {
-                "projectPath": "D:\\c#\\keke\\Contracts\\Contracts.csproj"
+              "D:\\lanh_thoi_dung_mua\\keke\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\Contracts\\Contracts.csproj"
               },
-              "D:\\c#\\keke\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\c#\\keke\\Infrastructure\\Infrastructure.csproj"
+              "D:\\lanh_thoi_dung_mua\\keke\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -85,21 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\c#\\keke\\Application\\Application.csproj": {
+    "D:\\lanh_thoi_dung_mua\\keke\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\keke\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\lanh_thoi_dung_mua\\keke\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\c#\\keke\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\My computer\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\keke\\Application\\obj\\",
+        "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\foxai\\.nuget\\packages\\",
+        "outputPath": "D:\\lanh_thoi_dung_mua\\keke\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\My computer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\foxai\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -111,8 +111,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\c#\\keke\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\c#\\keke\\Domain\\Domain.csproj"
+              "D:\\lanh_thoi_dung_mua\\keke\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\Domain\\Domain.csproj"
               }
             }
           }
@@ -135,6 +135,14 @@
             "ErrorOr": {
               "target": "Package",
               "version": "[2.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
             },
             "MediatR": {
               "target": "Package",
@@ -165,21 +173,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\c#\\keke\\Contracts\\Contracts.csproj": {
+    "D:\\lanh_thoi_dung_mua\\keke\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\keke\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "D:\\lanh_thoi_dung_mua\\keke\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "D:\\c#\\keke\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\My computer\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\keke\\Contracts\\obj\\",
+        "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\foxai\\.nuget\\packages\\",
+        "outputPath": "D:\\lanh_thoi_dung_mua\\keke\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\My computer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\foxai\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -223,21 +231,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\c#\\keke\\Domain\\Domain.csproj": {
+    "D:\\lanh_thoi_dung_mua\\keke\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\keke\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\lanh_thoi_dung_mua\\keke\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\c#\\keke\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\My computer\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\keke\\Domain\\obj\\",
+        "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\foxai\\.nuget\\packages\\",
+        "outputPath": "D:\\lanh_thoi_dung_mua\\keke\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\My computer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\foxai\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -287,21 +295,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\c#\\keke\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\lanh_thoi_dung_mua\\keke\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\keke\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\lanh_thoi_dung_mua\\keke\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\c#\\keke\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\My computer\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\keke\\Infrastructure\\obj\\",
+        "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\foxai\\.nuget\\packages\\",
+        "outputPath": "D:\\lanh_thoi_dung_mua\\keke\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\My computer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\foxai\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -313,8 +321,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\c#\\keke\\Application\\Application.csproj": {
-                "projectPath": "D:\\c#\\keke\\Application\\Application.csproj"
+              "D:\\lanh_thoi_dung_mua\\keke\\Application\\Application.csproj": {
+                "projectPath": "D:\\lanh_thoi_dung_mua\\keke\\Application\\Application.csproj"
               }
             }
           }
@@ -334,6 +342,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[10.0.0-preview.6.25358.103, )"
@@ -363,7 +375,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

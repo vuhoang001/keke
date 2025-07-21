@@ -1,14 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "GzHAGO0MdXU=",
+  "dgSpecHash": "S+dXMCfSO90=",
   "success": true,
-  "projectFilePath": "D:\\c#\\keke\\Application\\Application.csproj",
+  "projectFilePath": "D:\\lanh_thoi_dung_mua\\keke\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\My computer\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
-    "C:\\Users\\My computer\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
-    "C:\\Users\\My computer\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
-    "C:\\Users\\My computer\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
-    "C:\\Users\\My computer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0-preview.6.25358.103\\microsoft.extensions.dependencyinjection.abstractions.10.0.0-preview.6.25358.103.nupkg.sha512"
+    "C:\\Users\\foxai\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
+    "C:\\Users\\foxai\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\foxai\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\foxai\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
+    "C:\\Users\\foxai\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\foxai\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\foxai\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\foxai\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0-preview.6.25358.103\\microsoft.extensions.dependencyinjection.abstractions.10.0.0-preview.6.25358.103.nupkg.sha512"
   ],
   "logs": []
 }

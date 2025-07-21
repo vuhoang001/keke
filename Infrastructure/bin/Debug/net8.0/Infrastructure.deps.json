@@ -9,6 +9,7 @@
       "Infrastructure/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.10",
           "Microsoft.Extensions.Configuration": "10.0.0-preview.6.25358.103",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.0-preview.6.25358.103",
           "System.IdentityModel.Tokens.Jwt": "8.12.1"
@@ -22,6 +23,38 @@
           "lib/net6.0/ErrorOr.dll": {
             "assemblyVersion": "2.0.1.0",
             "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "FluentValidation/12.0.0": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.3.1": {
+        "dependencies": {
+          "FluentValidation": "12.0.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.11.0"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.3.1.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.11.0": {
+        "dependencies": {
+          "FluentValidation": "12.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-preview.6.25358.103"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.11.0.0"
           }
         }
       },
@@ -53,6 +86,17 @@
           "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.1.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.10": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.1.2"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "8.0.10.0",
+            "fileVersion": "8.0.1024.46804"
           }
         }
       },
@@ -101,12 +145,6 @@
       "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-preview.6.25358.103"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
         }
       },
       "Microsoft.Extensions.Options/10.0.0-preview.6.25358.103": {
@@ -174,6 +212,30 @@
           }
         }
       },
+      "Microsoft.IdentityModel.Protocols/7.1.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "8.12.1",
+          "Microsoft.IdentityModel.Tokens": "8.12.1"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.IdentityModel.Protocols.dll": {
+            "assemblyVersion": "7.1.2.0",
+            "fileVersion": "7.1.2.41121"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/7.1.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "7.1.2",
+          "System.IdentityModel.Tokens.Jwt": "8.12.1"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "assemblyVersion": "7.1.2.0",
+            "fileVersion": "7.1.2.41121"
+          }
+        }
+      },
       "Microsoft.IdentityModel.Tokens/8.12.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
@@ -202,6 +264,8 @@
         "dependencies": {
           "Domain": "1.0.0",
           "ErrorOr": "2.0.1",
+          "FluentValidation": "12.0.0",
+          "FluentValidation.AspNetCore": "11.3.1",
           "MediatR": "11.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-preview.6.25358.103"
@@ -239,6 +303,27 @@
       "path": "erroror/2.0.1",
       "hashPath": "erroror.2.0.1.nupkg.sha512"
     },
+    "FluentValidation/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "path": "fluentvalidation/12.0.0",
+      "hashPath": "fluentvalidation.12.0.0.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FjkfrGGwC+25oH8QpX1ti3gxkFjDDtotkAQWyQz2CkwQwEfRKTANjhh77I79kY8dov2ydK1SY+e4jiOWsbbDdQ==",
+      "path": "fluentvalidation.aspnetcore/11.3.1",
+      "hashPath": "fluentvalidation.aspnetcore.11.3.1.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-viTKWaMbL3yJYgGI0DiCeavNbE9UPMWFVK2XS9nYXGbm3NDMd0/L5ER4wBzmTtW3BYh3SrlSXm9RACiKZ6stlA==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.11.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512"
+    },
     "MediatR/11.1.0": {
       "type": "package",
       "serviceable": true,
@@ -259,6 +344,13 @@
       "sha512": "sha512-RW3etRuy6Xp63cgqfC0r/ITOtUT0f9ymJl1+1XZdzsYUsfv7WBPC2kXGOP8IYpY/6c4Q6805vbIW/88DopUs3w==",
       "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
       "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rcPXghZCc82IB9U2Px1Ln5Zn3vjV4p83H/Few5T/904hBddjSz03COQ2zOGWBBvdTBY+GciAUJwgBFNWaxLfqw==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/8.0.10",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/10.0.0-preview.6.25358.103": {
       "type": "package",
@@ -336,6 +428,20 @@
       "sha512": "sha512-39HjVkU7Voe2jRLmORRB5PoTmta1ZPKzUZCc6ldlNlLzdx+um0+fAnvfk05LUQPrNxpvb5ZoqF00SrNvyO2Fzg==",
       "path": "microsoft.identitymodel.logging/8.12.1",
       "hashPath": "microsoft.identitymodel.logging.8.12.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols/7.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SydLwMRFx6EHPWJ+N6+MVaoArN1Htt92b935O3RUWPY1yUF63zEjvd3lBu79eWdZUwedP8TN2I5V9T3nackvIQ==",
+      "path": "microsoft.identitymodel.protocols/7.1.2",
+      "hashPath": "microsoft.identitymodel.protocols.7.1.2.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/7.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6lHQoLXhnMQ42mGrfDkzbIOR3rzKM1W1tgTeMPLgLCqwwGw0d96xFi/UiX/fYsu7d6cD5MJiL3+4HuI8VU+sVQ==",
+      "path": "microsoft.identitymodel.protocols.openidconnect/7.1.2",
+      "hashPath": "microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Tokens/8.12.1": {
       "type": "package",

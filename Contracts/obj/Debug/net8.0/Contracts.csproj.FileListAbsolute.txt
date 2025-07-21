@@ -10,3 +10,15 @@ D:\c#\keke\Contracts\obj\Debug\net8.0\refint\Contracts.dll
 D:\c#\keke\Contracts\obj\Debug\net8.0\Contracts.pdb
 D:\c#\keke\Contracts\obj\Debug\net8.0\ref\Contracts.dll
 D:\c#\keke\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
+D:\lanh_thoi_dung_mua\keke\Contracts\bin\Debug\net8.0\Contracts.deps.json
+D:\lanh_thoi_dung_mua\keke\Contracts\bin\Debug\net8.0\Contracts.dll
+D:\lanh_thoi_dung_mua\keke\Contracts\bin\Debug\net8.0\Contracts.pdb
+D:\lanh_thoi_dung_mua\keke\Contracts\obj\Debug\net8.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\lanh_thoi_dung_mua\keke\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfoInputs.cache
+D:\lanh_thoi_dung_mua\keke\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfo.cs
+D:\lanh_thoi_dung_mua\keke\Contracts\obj\Debug\net8.0\Contracts.csproj.CoreCompileInputs.cache
+D:\lanh_thoi_dung_mua\keke\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
+D:\lanh_thoi_dung_mua\keke\Contracts\obj\Debug\net8.0\Contracts.dll
+D:\lanh_thoi_dung_mua\keke\Contracts\obj\Debug\net8.0\refint\Contracts.dll
+D:\lanh_thoi_dung_mua\keke\Contracts\obj\Debug\net8.0\Contracts.pdb
+D:\lanh_thoi_dung_mua\keke\Contracts\obj\Debug\net8.0\ref\Contracts.dll

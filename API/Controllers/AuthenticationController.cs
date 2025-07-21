@@ -1,11 +1,6 @@
-﻿using Application.Services.Authentication;
-using Application.Services.Authentication.Commands;
-using Application.Services.Authentication.Commands.Register;
-using Application.Services.Authentication.Common;
-using Application.Services.Authentication.Queries;
+﻿using Application.Services.Authentication.Commands.Register;
 using Application.Services.Authentication.Queries.Login;
 using Contracts.Authentication;
-using ErrorOr;
 using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +17,7 @@ public class AuthenticationController(
     public async Task<IActionResult> Register(RequestRegister request)
     {
         var registerCommand = mapper.Map<RegisterCommand>(request);
-        var authResult = await mediator.Send(registerCommand);
+        var authResult      = await mediator.Send(registerCommand);
 
         return authResult.Match(
             response => Ok(mapper.Map<AuthenticationResponse>(response)),
@@ -30,6 +25,7 @@ public class AuthenticationController(
     }
 
     [HttpPost("login")]
+    
     public async Task<IActionResult> Login(LoginRequest request)
     {
         var loginQuery = mapper.Map<LoginQuery>(request);

@@ -1,4 +1,5 @@
 ﻿using keke.Common.Mapping;
+using Microsoft.OpenApi.Models;
 
 namespace keke;
 
@@ -8,7 +9,32 @@ public static class DependencyInjection
     {
         services.AddMappings();
 
-        services.AddSwaggerGen();
+        services.AddSwaggerGen(options =>
+        {
+            options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            {
+                Name         = "Authorization",
+                In           = ParameterLocation.Header,
+                Type         = SecuritySchemeType.Http,
+                Scheme       = "bearer",
+                BearerFormat = "JWT"
+            });
+
+            options.AddSecurityRequirement(new OpenApiSecurityRequirement
+            {
+                {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference
+                        {
+                            Type = ReferenceType.SecurityScheme,
+                            Id   = "Bearer"
+                        }
+                    },
+                    []
+                },
+            });
+        });
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         return services;
