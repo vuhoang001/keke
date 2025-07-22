@@ -1,9 +1,8 @@
 ﻿using FluentValidation;
-using Microsoft.AspNetCore.Identity.Data;
 
 namespace Application.Services.Authentication.Queries.Login;
 
-public class LoginValidator : AbstractValidator<LoginRequest>
+public class LoginValidator : AbstractValidator<LoginQuery>
 {
     public LoginValidator()
     {

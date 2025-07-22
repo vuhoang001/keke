@@ -3,9 +3,12 @@ using Application.Common.Interfaces.Authentication;
 using Application.Common.Interfaces.Persistence;
 using Application.Common.Interfaces.Services;
 using Infrastructure.Authentication;
+using Infrastructure.Authentication.Identity;
 using Infrastructure.Persistence;
 using Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -19,20 +22,34 @@ public static class DependencyInjection
         ConfigurationManager builderConfiguration)
     {
         services.AddAuth(builderConfiguration);
-        services.AddSingleton<IUserRepository, UserRepository>();
+
+
+        services.AddIdentity<AppUser, AppRole>()
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
+        services.AddScoped<IUserRepository, UserRepository>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         return services;
     }
 
-    private static IServiceCollection AddAuth(this IServiceCollection services,
+    private static void AddAuth(this IServiceCollection services,
         ConfigurationManager builderConfiguration)
     {
-        var jwtSettings = new JwtSettings();
-        builderConfiguration.Bind(JwtSettings.SectionName, jwtSettings);
+        var jwtSettings       = new JwtSettings();
+        var dbContextSettings = new DbContextSettings();
 
+        builderConfiguration.Bind(JwtSettings.SectionName, jwtSettings);
+        builderConfiguration.Bind(DbContextSettings.SectionName, dbContextSettings);
+
+        services.AddSingleton(Options.Create(dbContextSettings));
         services.AddSingleton(Options.Create(jwtSettings));
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
+
         services.Configure<JwtSettings>(builderConfiguration.GetSection(JwtSettings.SectionName));
+        services.Configure<DbContextSettings>(builderConfiguration.GetSection(DbContextSettings.SectionName));
+
+        services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlServer(dbContextSettings.DefaultConnection));
 
         services.AddAuthentication(defaultScheme: JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters
@@ -49,6 +66,5 @@ public static class DependencyInjection
 
 
         services.AddAuthorization();
-        return services;
     }
 }

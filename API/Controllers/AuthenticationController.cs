@@ -25,7 +25,6 @@ public class AuthenticationController(
     }
 
     [HttpPost("login")]
-    
     public async Task<IActionResult> Login(LoginRequest request)
     {
         var loginQuery = mapper.Map<LoginQuery>(request);

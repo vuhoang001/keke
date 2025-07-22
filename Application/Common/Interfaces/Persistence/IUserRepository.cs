@@ -4,7 +4,9 @@ namespace Application.Common.Interfaces.Persistence;
 
 public interface IUserRepository
 {
-    User? GetUserByEmail(string email);
+    Task<User?> GetUserByEmail(string email);
 
-    void AddUser(User user);
+    Task<bool> IsValidPassword(User user, string password);
+
+    Task AddUser(User user, string password);
 }

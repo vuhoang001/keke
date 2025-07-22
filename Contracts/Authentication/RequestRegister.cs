@@ -1,8 +1,7 @@
 ﻿namespace Contracts.Authentication;
 
 public record RequestRegister(
-    string FirstName,
-    string LastName,
+    string UserName,
     string Email,
     string Password
 );
